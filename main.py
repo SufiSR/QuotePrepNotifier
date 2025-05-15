@@ -1,7 +1,7 @@
 from zeep import Client
 from dotenv import load_dotenv
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections import defaultdict
 from typing import List, Dict, Any
 from send_email import send_email
@@ -32,7 +32,8 @@ def login() -> str:
 def get_all_quotes(uuid: str) -> List[int]:
     """Retrieves all quote IDs from the past year with status 'Preparation' (status 9)."""
     try:
-        start_date = datetime.today().replace(year=datetime.today().year - 1)
+        lookback_days = int(os.getenv("QUOTE_LOOKBACK_DAYS", "365"))  # default to 1 year
+        start_date = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=lookback_days)
         time_frame = {
             "dateFrom": start_date.strftime('%Y-%m-%d'),
             "dateRelation": 1,
