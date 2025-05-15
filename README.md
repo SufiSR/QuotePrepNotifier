@@ -58,7 +58,7 @@ SENDER_PASSWORD = "your_app_password"  # Use environment variables for productio
 Run the script with:
 
 ```bash
-python quote_notifier.py
+python main.py
 ```
 
 You can rename the main script file if needed.
