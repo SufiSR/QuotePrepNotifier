@@ -40,6 +40,7 @@ Create a `.env` file in the project root and add the following:
 PLUNET_BASE_URL=https://your.plunet.instance.com/api30/
 PLUNET_API_USER=api_user
 PLUNET_API_PASSWORD=secure_password
+QUOTE_LOOKBACK_DAYS=365
 ```
 
 Also make sure your `send_email.py` script includes your SMTP config:
