@@ -1,4 +1,3 @@
-````markdown
 # 📨 Quote Summary Notifier for Plunet
 
 This Python script connects to the [Plunet BusinessManager](https://www.plunet.com) SOAP API and retrieves all quotes that are currently in **Preparation** status (status ID `9`) within the last 12 months. It then sends each **project manager** an email summary of their assigned quotes.
@@ -103,4 +102,4 @@ Feel free to contribute or fork the script for internal use!
 ```
 
 Let me know if you'd like this published as a GitHub repository template or need badges, changelog formatting, or license instructions.
-```
+
