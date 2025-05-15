@@ -1,5 +1,3 @@
-Certainly! Here's the full `README.md` content **in raw Markdown format**, ready for copy-paste into your `README.md` file:
-
 ````markdown
 # 📨 Quote Summary Notifier for Plunet
 
